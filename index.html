@@ -5,149 +5,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="shortcut icon" href="./favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/proyecto.css">
 </head>
 <!-- Primero quería aclarar que en todo momento utilizo imágenes de prueba donde luego irán las imágenes reales(ubicadas en main), el logo y el mapa(ubicados tanto en header como en footer), ya que no eran obligatorias para ésta entrega, luego éstas serán reemplazadas. A excepción de la imágen del carrito que es más o menos como va a quedar definitivamente(a excepción de algúnos cambios que me gustaría realizarle)-->
 <body>
  
-    <header class="cabeceraIndex">
-        
-        <ul class="barraNav">
-            <li class="listaNav"><a class="botonesNav" href="./pages/cafeteria.html">Cafetería</a></li>
-            <li class="listaNav"><a class="botonesNav" href="./pages/tragos.html">Tragos</a></li>
-            <li class="listaNav"><a class="botonesNav" href="#">Inicio</a></li>
-            <li class="listaNav"><a class="botonesNav" href="./pages/restaurante.html">Restaurante</a></li>
-            <li class="listaNav"><a class="botonesNav" href="./pages/carrito.html">Carrito</a></li>
-        </ul>
-
-        <div>
-            <img class="logoPrincipal" src="./assets/img/logo.jpg" alt="Logo">
+    <header>
+        <div class="cabeceraIndex ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+                        <ul class="barraNav navbar-nav">
+                            <li class="nav-item "><a class="botonesNav" href="./pages/cafeteria.html">Cafetería</a></li>
+                            <li class="nav-item "><a class="botonesNav" href="./pages/tragos.html">Tragos</a></li>
+                            <li class="nav-item "><a class="botonesNav" href="#">Inicio</a></li>
+                            <li class="nav-item "><a class="botonesNav" href="./pages/restaurante.html">Restaurante</a></li>
+                            <li class="nav-item "><a class="botonesNav" href="./pages/carrito.html">Carrito</a></li>
+                        </ul>
+                    </div>
+                </div>    
+            </nav>
+    
+            <div class="sin-margin">
+                <div class="row navbar-collapse claseContenedor">
+    
+                    <div class="col-md-3 offset-md-1">
+                        <div class="text-right">
+                            <a class="carritoEnlace " href="./pages/carrito.html">
+                                <img src="./assets/img/carro-de-la-compra.jpg" alt="Carrito" class="carrito">
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 ">
+                        <div class="text-center">
+                            <img class="logoPrincipal rounded " src="./assets/img/edLogo.png" alt="Logo">
+                        </div>
+                    </div>
+    
+                </div>
         </div>
-        
-        <div class="tituloSubtitulo">
-            <h1 class="tituloIndex">El Descanso Restobar</h1>
-        </div>
 
-        <div class="tituloSubtitulo">
-            <a class="carritoEnlace" href="./pages/carrito.html">
-                <img src="./assets/img/carro-de-la-compra.jpg" alt="Carrito" class="carrito ">
-            </a>
-        </div>
+        <div class="container">
+            <div class=" row">
+                <div class="tituloSubtitulo col-md-12">
+                    <h1 class="tituloIndex text-center mt-5">El Descanso Restobar</h1>
+                    <h2 class="subTitulo text-center">Cocina artesanal con pasión, amor y sabor</h2>
+                </div>
 
-        <h2 class="subTitulo">Cocina artesanal con pasión, amor y sabor</h2>
+            </div>
+        </div>
 
     </header>
     
-    <main class="colorFondo">
-        
-        <div class="demostracion">
-            <div class="flexItems">
-                <!-- Aquí utilizo Lorem donde estarán ubicados los textos que hablarán sobre la imágen ubicada arriba(Imágenes provisorias) de los mísmos-->
-                <img src="./assets/img/252.jpg" alt="imagen de prueba"> 
-                <p class="textoDemostracion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, delectus officiis possimus non doloribus fugiat est modi adipisci eligendi,</p>
-            </div>
-            <div class="flexItems">
-                <img src="./assets/img/252.jpg" alt="imagen de prueba"> 
-                <p class="textoDemostracion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, delectus officiis possimus non doloribus fugiat est modi adipisci eligendi,</p>
-            </div>
-            <div class="flexItems">
-                <img src="./assets/img/252.jpg" alt="imagen de prueba"> 
-                <p class="textoDemostracion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, delectus officiis possimus non doloribus fugiat est modi adipisci eligendi,</p>
-            </div>
-            <div class="flexItems">
-                <img src="./assets/img/252.jpg" alt="imagen de prueba"> 
-                <p class="textoDemostracion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, delectus officiis possimus non doloribus fugiat est modi adipisci eligendi,</p>
-            </div>
+    <main>
+
+        <div class="colorFondo container-adaptable">
+            <div id="carouselExampleCaptions carrucelTamaño" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/img/restaurante_1.jpg" class="d-block w-100 imagenesCarrucelTamaño" alt="...">
+                    
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/restaurante_2jpg.jpg" class="d-block w-100 imagenesCarrucelTamaño" alt="...">
+                    
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/restaurante_3.jpg" class="d-block w-100 imagenesCarrucelTamaño" alt="...">
+                    
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+    
+    
+    
+    
+            <form class="formularioRegistro">
+                <!-- Formulario de Registro a la página del Restobar -->
+                <h3 class="cabeceraRegistro">Registrarse</h3>
+    
+                <input type="text" placeholder="Apellidos y Nombre" class="registroIndex">
+    
+                <input type="email" placeholder="alguien@gmail.com" class="registroIndex">
+    
+                <input type="password" placeholder="Contraseña" class="registroIndex">
+    
+                <input type="button" value="REGISTRARSE" class="registroIndex botonRegistrarse">
+    
+            </form>
         </div>
-
-        <form class="formularioRegistro">
-            <!-- Formulario de Registro a la página del Restobar -->
-            <h3 class="cabeceraRegistro">Registrarse</h3>
-
-            <input type="text" placeholder="Apellidos y Nombre" class="registroIndex">
-
-            <input type="email" placeholder="alguien@gmail.com" class="registroIndex">
-
-            <input type="password" placeholder="Contraseña" class="registroIndex">
-
-            <input type="button" value="REGISTRARSE" class="registroIndex botonRegistrarse">
-
-        </form>
+        
+        
 
     </main>
 
-    <footer class="pieIndex">
+    <footer>
 
         <!-- En footer están ubicados el logo, todos los medion de contacto(con sus respectivas imágenes provisorias que serán reemplazadas por íconos), el copyright y el mapa(Imagen provisoria) del Restobar -->
-
-        <div class="pieDePagina">
-
-            <img class="logoFooter" src="./assets/img/logo.jpg" alt="Logo">
-
-            <img src="./assets/img/iconoContacto.jpg" alt="icono teléfono">
-
+        <div class="pieIndex">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <img class="logoFooter logoPrincipal" src="./assets/img/edLogo.png" alt="Logo">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <img class="iconosPiePagina" src="./assets/img/llamada.png" alt="icono teléfono">
+                        
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <img class="iconosPiePagina" src="./assets/img/twitter.png" alt="icono Twiter">
+                        
+                    </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <img class="iconosPiePagina" src="./assets/img/facebook.png" alt="icono Facebook">
+                    
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img class="iconosPiePagina" src="./assets/img/instagram.png" alt="icono Instagram">
+                    
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img class="iconosPiePagina" src="./assets/img/mapa.png" alt="icono Mapa">
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img class="logoPrincipal" src="./assets/img/mapa_2.png" alt="Mapa" class="mapaPie">
+                    </a>
+                </li>
+            </ul>
+    
+            <p class="Copyright">Copyright © 2023 El Descanso RestoBar. - Todos los derechos reservados.</p>
         </div>
-
-        <div class="pieDePagina">
-
-            <p class="textoPie">+54 9 3515789872</p>
-            
-        </div>
-
-        <div class="pieDePagina">
-
-            <img src="./assets/img/iconoContacto.jpg" alt="icono Twiter">
         
-        </div>
-
-        <div class="pieDePagina">
-
-            <p  class="textoPie">ElDescansoRestobar</p>
-
-        </div>
-
-        <div class="pieDePagina">
-        
-            <img src="./assets/img/iconoContacto.jpg" alt="icono Facebook">
-        
-        </div>
-
-        <div class="pieDePagina">
-
-            <p  class="textoPie">ElDescansoRestobar</p>
-
-        </div>
-
-        <div class="pieDePagina">
-
-            <img src="./assets/img/iconoContacto.jpg" alt="icono Instagram">
-        
-        </div>
-
-        <div class="pieDePagina">
-
-            <p  class="textoPie">@ElDescansoRestobar</p>
-        
-        </div>
-
-        <div class="pieDePagina  textoPie">
-
-            <img src="./assets/img/iconoContacto.jpg" alt="icono Mapa"><p>Avenida Recta Martinolli 1600</p>
-
-        </div>
-
-        <div class="pieDePagina">
-
-            <img src="./assets/img/mapa.jpg" alt="Mapa" class="mapaPie">
-
-        </div>
-
-        <p class="Copyright">Copyright © 2023 El Descanso RestoBar. - Todos los derechos reservados.</p>
 
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

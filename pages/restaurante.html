@@ -5,36 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
     <link rel="shortcut icon" href="../favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/proyecto.css">
 </head>
 <body>
 
-    <header class="cabeceraIndex">
+    <header>
     
-        <nav class="barraNav">
-            <li class="listaNav"><a class="botonesNav" href="./cafeteria.html">Cafetería</a></li>
-            <li class="listaNav"><a class="botonesNav" href="./tragos.html">Tragos</a></li>
-            <li class="listaNav"><a class="botonesNav" href="../index.html">Inicio</a></li>
-            <li class="listaNav"><a class="botonesNav" href="#">Restaurante</a></li>
-            <li class="listaNav"><a class="botonesNav" href="./carrito.html">Carrito</a></li>
-        </nav>
+        <div class="cabeceraIndex ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+                        <ul class="barraNav navbar-nav">
+                            <li class="nav-item "><a class="botonesNav" href="./cafeteria.html">Cafetería</a></li>
+                            <li class="nav-item "><a class="botonesNav" href="./tragos.html">Tragos</a></li>
+                            <li class="nav-item "><a class="botonesNav" href="../index.html">Inicio</a></li>
+                            <li class="nav-item "><a class="botonesNav" href="#">Restaurante</a></li>
+                            <li class="nav-item "><a class="botonesNav" href="./carrito.html">Carrito</a></li>
+                        </ul>
+                    </div>
+                </div>    
+            </nav>
     
-        <div>
-            <img class="logoPrincipal" src="../assets/img/logo.jpg" alt="Logo">
-        </div>
-        
-        <div class="tituloSubtitulo">
-            <h1 class="tituloIndex">El Descanso Restobar</h1>
+            <div class="sin-margin">
+                <div class="row navbar-collapse claseContenedor">
+    
+                    <div class="col-md-3 offset-md-1">
+                        <div class="text-right">
+                            <a class="carritoEnlace " href="../pages/carrito.html">
+                                <img src="../assets/img/carro-de-la-compra.jpg" alt="Carrito" class="carrito">
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 ">
+                        <div class="text-center">
+                            <img class="logoPrincipal rounded " src="../assets/img/edLogo.png" alt="Logo">
+                        </div>
+                    </div>
+    
+                </div>
         </div>
 
-        <div class="tituloSubtitulo">
-            <a class="carritoEnlace" href="../pages/carrito.html">
-                <img src="../assets/img/carro-de-la-compra.jpg" alt="Carrito" class="carrito ">
-            </a>
-        </div>
+        <div class="container">
+            <div class=" row">
+                <div class="tituloSubtitulo col-md-12">
+                    <h1 class="tituloIndex text-center mt-5">El Descanso Restobar</h1>
+                    <h2 class="subTitulo text-center">Carta Restaurante</h2>
+                </div>
 
-        <h2 class="subTitulo">Carta Restaurante</h2>
+            </div>
+        </div>
 
     </header>
     
@@ -42,57 +66,57 @@
         <div class="demostracion">
             <button class="botonesCarrito">
                 <div class="flexItems">
-                    <img src="../assets/img/252.jpg" alt=""> 
+                    <img class="tamañoImagen" src="../assets/img/hamburguesa.jpg" alt=""> 
                     <p class="textoDemostracion">HAMBURGUESA $$$</p>
                 </div>
             </button>
 
             <button class="botonesCarrito">
                 <div class="flexItems">
-                    <img src="../assets/img/252.jpg" alt=""> 
+                    <img class="tamañoImagen" src="../assets/img/pizza.jpg" alt=""> 
                     <p class="textoDemostracion">PIZZA $$$</p>
                 </div>
             </button>
             
             <button class="botonesCarrito">
                 <div class="flexItems">
-                    <img src="../assets/img/252.jpg" alt=""> 
+                    <img class="tamañoImagen" src="../assets/img/papasFritas.jpg" alt=""> 
                     <p class="textoDemostracion">PAPAS FRITAS $$$</p>
                 </div>
             </button>
 
             <button class="botonesCarrito">
                 <div class="flexItems">
-                    <img src="../assets/img/252.jpg" alt=""> 
+                    <img class="tamañoImagen" src="../assets/img/pescado.jpg" alt=""> 
                     <p class="textoDemostracion">PESCADO $$$</p>
                 </div>
             </button>
 
             <button class="botonesCarrito">
                 <div class="flexItems">
-                    <img src="../assets/img/252.jpg" alt=""> 
-                    <p class="textoDemostracion">PASTEL DE PAPA $$</p>
-                </div>
-            </button>
-
-            <button class="botonesCarrito">
-                <div class="flexItems">
-                    <img src="../assets/img/252.jpg" alt=""> 
-                    <p class="textoDemostracion">ENTRAÑA $$$</p>
-                </div>
-            </button>
-
-            <button class="botonesCarrito">
-                <div class="flexItems">
-                    <img src="../assets/img/252.jpg" alt=""> 
-                    <p class="textoDemostracion">BIFE DE LOMO $$$</p>
-                </div>
-            </button>
-
-            <button class="botonesCarrito">
-                <div class="flexItems">
-                    <img src="../assets/img/252.jpg" alt=""> 
+                    <img class="tamañoImagen" src="../assets/img/ensalada.jpg" alt=""> 
                     <p class="textoDemostracion">ENSALADA $$$</p>
+                </div>
+            </button>
+
+            <button class="botonesCarrito">
+                <div class="flexItems">
+                    <img class="tamañoImagen" src="../assets/img/pasta.jpg" alt=""> 
+                    <p class="textoDemostracion">PASTA $$$</p>
+                </div>
+            </button>
+
+            <button class="botonesCarrito">
+                <div class="flexItems">
+                    <img class="tamañoImagen" src="../assets/img/tablaPicada.jpg" alt=""> 
+                    <p class="textoDemostracion">TABLA DE PICADA $$$</p>
+                </div>
+            </button>
+
+            <button class="botonesCarrito">
+                <div class="flexItems">
+                    <img class="tamañoImagen" src="../assets/img/brochettas.jpg" alt=""> 
+                    <p class="textoDemostracion">BROCHETTAS $$$</p>
                 </div>
             </button>
 
@@ -101,74 +125,56 @@
 
     </main>
 
-    <footer class="pieIndex">
-        <div class="pieDePagina">
-
-            <img class="logoFooter" src="../assets/img/logo.jpg" alt="Logo">
-
-            <img src="../assets/img/iconoContacto.jpg" alt="icono teléfono">
-
+    <footer>
+        <div class="pieIndex">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <img class="logoFooter logoPrincipal" src="../assets/img/edLogo.png" alt="Logo">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <img class="iconosPiePagina" src="../assets/img/llamada.png" alt="icono teléfono">
+                        
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <img class="iconosPiePagina" src="../assets/img/twitter.png" alt="icono Twiter">
+                        
+                    </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <img class="iconosPiePagina" src="../assets/img/facebook.png" alt="icono Facebook">
+                    
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img class="iconosPiePagina" src="../assets/img/instagram.png" alt="icono Instagram">
+                    
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img class="iconosPiePagina" src="../assets/img/mapa.png" alt="icono Mapa">
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img class="logoPrincipal" src="../assets/img/mapa_2.png" alt="Mapa" class="mapaPie">
+                    </a>
+                </li>
+            </ul>
+    
+            <p class="Copyright">Copyright © 2023 El Descanso RestoBar. - Todos los derechos reservados.</p>
         </div>
-
-        <div class="pieDePagina">
-
-            <p class="textoPie">+54 9 3515789872</p>
-            
-        </div>
-
-        <div class="pieDePagina">
-
-            <img src="../assets/img/iconoContacto.jpg" alt="icono Twiter">
-        
-        </div>
-
-        <div class="pieDePagina">
-
-            <p  class="textoPie">ElDescansoRestobar</p>
-
-        </div>
-
-        <div class="pieDePagina">
-        
-            <img src="../assets/img/iconoContacto.jpg" alt="icono Facebook">
-        
-        </div>
-
-        <div class="pieDePagina">
-
-            <p  class="textoPie">ElDescansoRestobar</p>
-
-        </div>
-
-        <div class="pieDePagina">
-
-            <img src="../assets/img/iconoContacto.jpg" alt="icono Instagram">
-        
-        </div>
-
-        <div class="pieDePagina">
-
-            <p  class="textoPie">@ElDescansoRestobar</p>
-        
-        </div>
-
-        <div class="pieDePagina  textoPie">
-
-            <img src="../assets/img/iconoContacto.jpg" alt="icono Mapa"><p>Avenida Recta Martinolli 1600</p>
-
-        </div>
-
-        <div class="pieDePagina">
-
-            <img src="../assets/img/mapa.jpg" alt="Mapa" class="mapaPie">
-
-        </div>
-
-        <p class="Copyright">Copyright © 2023 El Descanso RestoBar. - Todos los derechos reservados.</p>
 
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
