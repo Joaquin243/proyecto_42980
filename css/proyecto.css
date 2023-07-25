@@ -48,16 +48,32 @@
     font-size: 1.5em;
 }
 .botonesNav:hover{
-    color: orange;
+    color: orange !important;
+    text-shadow: 0.5px 0.5px 10px white;
 }
 /*
 
 */
 .logoPrincipal{
-    max-width: 170px;
+    max-width: 80px;
     margin-top: 3vh;
+    padding-bottom: 2vh;
 }
 
+.logoPrincipalCentral{
+    max-width: 200px;
+    margin-top: 3vh;
+    padding-bottom: 2vh;
+}
+
+.logoPrincipal:first-child{
+    margin-right: 3.75em;
+    margin-left: 4.5em !important;
+}
+
+.logoPrincipal:last-child{
+    margin-left: 1em;
+}
 
 .tituloIndex {
     color: white;
@@ -102,6 +118,7 @@
     width: 50% auto;
     padding: 2em;
     text-align: center;
+    align-items: center;
 }
 
 
@@ -131,7 +148,7 @@
 .textoDemostracion{
     font-size: 2em;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 1em;
     padding-top: 2em;
     text-decoration: underline;
 }
@@ -142,6 +159,15 @@
 
 .cabeceraRegistro{
     font-size: 4rem;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px black;
+    text-decoration: underline;
+}
+
+.nosotrosRegistro{
+    font-size: 3rem;
     color: white;
     margin-top: 0;
     margin-bottom: 2rem;
@@ -165,14 +191,17 @@
 /* A partir de acá Terminan las modificaciones del main y empiezan las del footer
 */
 .iconosPiePagina{
-    max-width: 150px;
+    max-width: 70px;
     margin-top: 3vh;
     background-color: orange;
     padding: 1em;
     border-radius: 75%;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.iconosPiePagina:first-child{
     margin-left: 5em;
-    margin-right: 5em;
-    
 }
 
 .pieIndex{
@@ -248,7 +277,7 @@
     padding: 1em;
 }
 .imagenBotonesCarrito{
-    max-width: 16em;
+    max-width: 400px;
     max-height: auto;
 }
 
@@ -283,4 +312,30 @@
 .imgGuiño{
     max-width: 20em;
     height: auto;
+}
+
+.tamañoMaximo{
+    max-width: 600px;
+    height: auto;
+}
+
+.textoDemostracionDescripción{
+    font-size: 1.3em;
+    color: orange;
+}
+
+.tituloMain{
+    font-size: 4em;
+    color: white;
+    text-decoration: underline;
+    text-shadow: 1px 1px 15px black;
+    padding-top: 1em;
+}
+
+.sobreNosotrosTexto{
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 2em;
+    text-shadow: 1px 1px 15px black;
 }
