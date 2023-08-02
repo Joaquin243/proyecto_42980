@@ -1,0 +1,57 @@
+.cabeceraIndex {
+    background-image: url(../assets/img/brick-wall1280.jpg);
+    background-size: 100% 250%;
+    background-repeat: no-repeat;
+    background-position: center;    
+    .botonesNav{
+        color: $color_blanco;
+        text-decoration: none;
+        margin-left: 3em;
+        margin-right: 3em;
+        font-size: 1.5em;
+        transition: text-shadow 1s;
+        &:hover{
+            color: orange;
+            text-shadow: 0.5px 0.5px 15px $color_blanco;
+        }    
+   }
+   .botonActivo{
+    color: orange;
+   }
+        
+}
+
+.claseContenedor{
+    margin: 0 !important;
+    .carritoEnlace{
+        width: 150px;
+        background-color: none;
+        .carrito{
+            width: 6rem;
+            height: auto;
+            background-image: $naranja;
+            @include pixeles_borde (4px,$color_negro);
+            padding: 0.5rem;
+            &:hover{
+                @include pixeles_borde (5px,$color_negro);
+            }
+        }
+    }
+    .logoPrincipalCentral{
+        max-width: 200px;
+        margin-top: 3vh;
+        padding-bottom: 2vh;
+    }
+}
+.tituloIndex {
+    color: $color_blanco;
+    @include pixeles_sombra(2px,black);
+    font-size: 3rem;
+}
+.subTitulo{
+    color: $color_blanco;
+    margin-top: 4rem;
+    @include pixeles_sombra(2px,black);
+    font-size: 2rem;
+    padding-bottom: 1em;
+}

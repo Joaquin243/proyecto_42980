@@ -1,0 +1,196 @@
+/*Modificaciones de la pagina de inicio*/
+
+.colorFondo {
+    @include back_align_over_pb($naranja,center,hidden,3em);           
+    .imagenesCarrucelTamaño{
+        max-height: 900px;
+        max-width: 90%;
+        margin: 5%;
+    }
+    .subTitulo{
+        color: $color_blanco;
+        margin-top: 4rem;
+        @include pixeles_sombra(2px,black);
+        font-size: 2rem;
+        padding-bottom: 1em;
+    }
+    .formularioRegistro{
+        margin-top: 3em;
+        .cabeceraRegistro{
+            font-size: 4em;
+            color: $color_blanco;
+            margin-top: 0;
+            margin-bottom: 2em;
+            @include pixeles_sombra(2px,$color_negro);
+            text-decoration: underline;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+    .registroIndex{
+        font-size: 3rem;
+        background-color: $color_negro;
+        color: $color_blanco;
+        .botonRegistrarse{
+            margin-top: 2rem;
+            color: $color_blanco;
+            background-color: $color_negro;
+        }
+
+    }
+}
+
+/*Modificaciones de la pagina de la cafetería y de la carta ya que tienen los miosmos estilados y modificaciones*/
+
+.colorFondo {
+    @include back_align_over_pb($naranja,center,hidden,3em); 
+    .demostracion{
+        display: inline-block;
+        width: 50% auto;
+        padding: 2em;
+        text-align: center;
+        align-items: center;
+        .botonesCarrito{
+            margin: 2em;
+            @include pixeles_borde (3px,$color_negro);
+            .tamañoMaximo{
+                max-width: 600px;
+                min-height: 810px;
+                height: auto;
+                .flexItems{
+                    display: inline-block;
+                    max-width: 100%;
+                    margin: 3rem;
+                    text-align: center;
+                    border: 20px $color_negro;
+                    max-height: 100%;
+                    .tamañoImagen{
+                        max-width: 100%;
+                        max-height: 35vh;
+                        @include pixeles_borde (2px,$color_negro);
+                    }
+                    .textoDemostracion{
+                        font-size: 2em;
+                        text-align: center;
+                        margin-bottom: 1em;
+                        padding-top: 2em;
+                        text-decoration: underline;
+                    }
+                    .textoDemostracionDescripción{
+                        font-size: 1.3em;
+                        color: orange;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*Modificaciones de la pagina del carrito*/
+
+.colorFondo {
+    @include back_align_over_pb($naranja,center,hidden,3em); 
+    .imagenesListaCarrito{
+        max-width: 540px;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    .demostracion{
+        display: inline-block;
+        width: 50% auto;
+        padding: 2em;
+        text-align: center;
+        align-items: center;
+        .queOpcionComida{
+            font-size: 3em;
+            background-color: transparent;
+            color: $color_blanco;
+            text-decoration: underline;
+            margin: 1em;
+        }
+        .imgGuiño{
+            max-width: 20em;
+            height: auto;
+        }
+        .imgBoton{
+            margin-left: 5rem;
+            margin-right: 5rem;
+            max-width: 22em;
+            max-height: 25em;
+            display: inline-block;
+            .botonesLlevaroNo{
+                max-width: 22em;
+                max-height: 25em;
+                padding: 1em;
+                background-color: $color_blanco;
+                width: 700px;
+                .imagenBotonesCarrito{
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                }
+                .opcionesComida{
+                    color: $color_negro;
+                    font-size: 2em;
+                    margin-bottom: 1em;
+                    @include pixeles_sombra(20px,$color_negro);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+/*Modificaciones de la pagina de la sección sobre nosotros*/
+
+.colorFondo {
+    @include back_align_over_pb($naranja,center,hidden,3em); 
+    .demostracion{
+        display: inline-block;
+        width: 50% auto;
+        padding: 2em;
+        text-align: center;
+        align-items: center;
+        .tituloMain{
+            font-size: 4em;
+            color: $color_blanco;
+            text-decoration: underline;
+            @include pixeles_sombra(8px,$color_negro);
+            padding-top: 1em;
+            animation-duration: 1s;
+        }
+        .sobreNosotrosTexto{
+            color: $color_blanco;
+            font-size: 1.8em;
+            text-align: center;
+            margin: 2em;
+            @include pixeles_sombra(8px,$color_negro);
+            font-family: 'Montserrat', sans-serif;
+            animation-duration: 1s;
+        }
+    }
+    .formularioRegistro{
+        margin-top: 3rem;
+        .cabeceraRegistro{
+            font-size: 4rem;
+            color: $color_blanco;
+            margin-top: 0;
+            margin-bottom: 2rem;
+            @include pixeles_sombra(8px,$color_negro);
+            text-decoration: underline;
+        }
+        .nosotrosRegistro{
+            font-size: 3rem;
+            color: $color_blanco;
+            margin-top: 0;
+            margin-bottom: 2rem;
+            @include pixeles_sombra(8px,$color_negro);
+            text-decoration: underline;
+            margin-bottom: 1em;
+        }
+        .registroIndex{
+            font-size: 3rem;
+            background-color: $color_negro;
+            color: $color_blanco;
+        }
+    }
+}

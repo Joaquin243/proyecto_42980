@@ -1,0 +1,45 @@
+.pieIndex{
+    background-color: map-get($fondos, oscuro);
+    text-align: left;  
+    .logoPrincipal{
+        max-width: 80px;
+        margin-top: 3vh;
+        padding-bottom: 2vh;
+        &:first-child{
+            margin-right: 3.75em;
+            margin-left: 4.5em !important;
+            &:hover{
+                @include pixeles_borde (2px,$color_negro);
+            }
+        }
+        &:last-child{
+            margin-left: 1em;
+            &:hover{
+                @include pixeles_borde (2px,$color_negro);
+            }
+        }
+    }
+    .iconosPiePagina{
+        max-width: 70px;
+        margin-top: 3vh;
+        background-image: $naranja;
+        padding: 1em;
+        border-radius: 75%;
+        margin-left: 4em;
+        margin-right: 4em;
+        &:first-child{
+            margin-left: 5em;
+        }
+        &:hover{
+            @include pixeles_borde (2px,$color_negro);
+        }
+        
+    }
+    .Copyright{
+        color: $color_blanco;
+        text-align: center;
+        padding: 1rem;
+        margin-bottom: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+}

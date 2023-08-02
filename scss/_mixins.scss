@@ -1,0 +1,12 @@
+@mixin pixeles_borde ($pixeles,$color){
+    border: $pixeles solid $color;
+}
+@mixin pixeles_sombra($pixeles,$sombra){
+    text-shadow: 1px 1px $pixeles $sombra
+}
+@mixin back_align_over_pb($fondo,$ubicacion,$overf,$pb){
+    background-image: $fondo;
+    text-align: $ubicacion;
+    overflow: $overf;
+    padding-bottom: $pb;   
+}

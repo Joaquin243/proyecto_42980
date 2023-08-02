@@ -1,341 +1,326 @@
-/* Aquí están ubicados los diseños generales de la página */
-*{
-    padding: 0;
-    margin: 0; 
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Montserrat:wght@400;700&display=swap"); /* Aquí están ubicados los diseños generales de la página */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
 
-} 
-
-/* Fuentes Utilizadas */
-
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Montserrat:wght@400;700&display=swap');
-
-/* A partir de acá comienzan las modificaciones del header */
-/*
-*/
+/* Aquí se escribirán todas las clases no anidadas*/
 .cabeceraIndex {
-    background-image: url(../assets/img/brick-wall1280.jpg);
-    background-size: 100% 250%;
-    background-repeat: no-repeat;
-    background-position: center;
-
+  background-image: url(../assets/img/brick-wall1280.jpg);
+  background-size: 100% 250%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cabeceraIndex .botonesNav {
+  color: white;
+  text-decoration: none;
+  margin-left: 3em;
+  margin-right: 3em;
+  font-size: 1.5em;
+  transition: text-shadow 1s;
+}
+.cabeceraIndex .botonesNav:hover {
+  color: orange;
+  text-shadow: 0.5px 0.5px 15px white;
+}
+.cabeceraIndex .botonActivo {
+  color: orange;
 }
 
-.claseContenedor{
-    margin: 0 !important;
+.claseContenedor {
+  margin: 0 !important;
 }
-/*
-.barraNav{
-    background-color: black;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    font-size: 2rem;
+.claseContenedor .carritoEnlace {
+  width: 150px;
+  background-color: none;
 }
-
-.listaNav{
-    display: inline-block;
+.claseContenedor .carritoEnlace .carrito {
+  width: 6rem;
+  height: auto;
+  background-image: radial-gradient(circle, #ff6e00, #ff7a00, #ff8500, #ff9000, #ff9b00);
+  border: 4px solid black;
+  padding: 0.5rem;
 }
-
-*/
-.botonesNav{
-    color: white;
-    text-decoration: none;
-    margin-left: 3em;
-    margin-right: 3em;
-    font-size: 1.5em;
+.claseContenedor .carritoEnlace .carrito:hover {
+  border: 5px solid black;
 }
-.botonesNav:hover{
-    color: orange !important;
-    text-shadow: 0.5px 0.5px 10px white;
-}
-/*
-
-*/
-.logoPrincipal{
-    max-width: 80px;
-    margin-top: 3vh;
-    padding-bottom: 2vh;
-}
-
-.logoPrincipalCentral{
-    max-width: 200px;
-    margin-top: 3vh;
-    padding-bottom: 2vh;
-}
-
-.logoPrincipal:first-child{
-    margin-right: 3.75em;
-    margin-left: 4.5em !important;
-}
-
-.logoPrincipal:last-child{
-    margin-left: 1em;
+.claseContenedor .logoPrincipalCentral {
+  max-width: 200px;
+  margin-top: 3vh;
+  padding-bottom: 2vh;
 }
 
 .tituloIndex {
-    color: white;
-    text-shadow: 1px 1px 2px black;
-    font-size: 3rem;
-}
-/*
-/* Utilicé margin-left: -150px porque no encontré otra manera de posicionar el carrito y cuando lo modificaba de otra manera se deformaba toda la página
-*/
-.carritoEnlace{
-    width: 150px;
-    background-color: none;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-size: 3rem;
 }
 
-
-.carrito{
-    width: 6rem;
-    height: auto;
-    background-color: orange;
-    border: 4px solid black;
-    padding: 0.5rem;
+.subTitulo {
+  color: white;
+  margin-top: 4rem;
+  text-shadow: 1px 1px 2px black;
+  font-size: 2rem;
+  padding-bottom: 1em;
 }
 
-.subTitulo{
-    color: white;
-    margin-top: 4rem;
-    text-shadow: 1px 1px 2px black;
-    font-size: 2rem;
-    padding-bottom: 1em;
-}
-/* A partir de acá Terminan las modificaciones del header y empiezan las del main
-*/
+/*Modificaciones de la pagina de inicio*/
 .colorFondo {
-    background-color: orange;
-    text-align: center;
-    overflow: hidden;
-    padding-bottom: 3em;
+  background-image: radial-gradient(circle, #ff6e00, #ff7a00, #ff8500, #ff9000, #ff9b00);
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 3em;
+}
+.colorFondo .imagenesCarrucelTamaño {
+  max-height: 900px;
+  max-width: 90%;
+  margin: 5%;
+}
+.colorFondo .subTitulo {
+  color: white;
+  margin-top: 4rem;
+  text-shadow: 1px 1px 2px black;
+  font-size: 2rem;
+  padding-bottom: 1em;
+}
+.colorFondo .formularioRegistro {
+  margin-top: 3em;
+}
+.colorFondo .formularioRegistro .cabeceraRegistro {
+  font-size: 4em;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 2em;
+  text-shadow: 1px 1px 2px black;
+  text-decoration: underline;
+  font-family: "Montserrat", sans-serif;
+}
+.colorFondo .registroIndex {
+  font-size: 3rem;
+  background-color: black;
+  color: white;
+}
+.colorFondo .registroIndex .botonRegistrarse {
+  margin-top: 2rem;
+  color: white;
+  background-color: black;
 }
 
-.demostracion{
-    display: inline-block;
-    width: 50% auto;
-    padding: 2em;
-    text-align: center;
-    align-items: center;
+/*Modificaciones de la pagina de la cafetería y de la carta ya que tienen los miosmos estilados y modificaciones*/
+.colorFondo {
+  background-image: radial-gradient(circle, #ff6e00, #ff7a00, #ff8500, #ff9000, #ff9b00);
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 3em;
+}
+.colorFondo .demostracion {
+  display: inline-block;
+  width: 50% auto;
+  padding: 2em;
+  text-align: center;
+  align-items: center;
+}
+.colorFondo .demostracion .botonesCarrito {
+  margin: 2em;
+  border: 3px solid black;
+}
+.colorFondo .demostracion .botonesCarrito .tamañoMaximo {
+  max-width: 600px;
+  min-height: 810px;
+  height: auto;
+}
+.colorFondo .demostracion .botonesCarrito .tamañoMaximo .flexItems {
+  display: inline-block;
+  max-width: 100%;
+  margin: 3rem;
+  text-align: center;
+  border: 20px black;
+  max-height: 100%;
+}
+.colorFondo .demostracion .botonesCarrito .tamañoMaximo .flexItems .tamañoImagen {
+  max-width: 100%;
+  max-height: 35vh;
+  border: 2px solid black;
+}
+.colorFondo .demostracion .botonesCarrito .tamañoMaximo .flexItems .textoDemostracion {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1em;
+  padding-top: 2em;
+  text-decoration: underline;
+}
+.colorFondo .demostracion .botonesCarrito .tamañoMaximo .flexItems .textoDemostracionDescripción {
+  font-size: 1.3em;
+  color: orange;
 }
 
-
-.imagenesCarrucelTamaño{
-    max-height: 900px;
-    max-width: 90%;
-    margin: 5%;
+/*Modificaciones de la pagina del carrito*/
+.colorFondo {
+  background-image: radial-gradient(circle, #ff6e00, #ff7a00, #ff8500, #ff9000, #ff9b00);
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 3em;
 }
-.flexItems{
-    display: inline-block;
-    max-width: 100%;
-    margin: 3rem;
-    text-align: center;
-    border: 20px black;
-    max-height: 100%;
+.colorFondo .imagenesListaCarrito {
+  max-width: 540px;
+  margin-left: 3em;
+  margin-right: 3em;
 }
-.textoCarrusel{
-    font-size: 1.5em;
-    padding: 10px;
-    color: white;
-    padding-bottom: 8em;
-    z-index: 10;
-    text-shadow: 1px 1px 2px black;
+.colorFondo .demostracion {
+  display: inline-block;
+  width: 50% auto;
+  padding: 2em;
+  text-align: center;
+  align-items: center;
 }
-
-
-.textoDemostracion{
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 1em;
-    padding-top: 2em;
-    text-decoration: underline;
+.colorFondo .demostracion .queOpcionComida {
+  font-size: 3em;
+  background-color: transparent;
+  color: white;
+  text-decoration: underline;
+  margin: 1em;
 }
-
-.formularioRegistro{
-    margin-top: 3rem;
+.colorFondo .demostracion .imgGuiño {
+  max-width: 20em;
+  height: auto;
 }
-
-.cabeceraRegistro{
-    font-size: 4rem;
-    color: white;
-    margin-top: 0;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 2px black;
-    text-decoration: underline;
+.colorFondo .demostracion .imgBoton {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  max-width: 22em;
+  max-height: 25em;
+  display: inline-block;
 }
-
-.nosotrosRegistro{
-    font-size: 3rem;
-    color: white;
-    margin-top: 0;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 2px black;
-    text-decoration: underline;
+.colorFondo .demostracion .imgBoton .botonesLlevaroNo {
+  max-width: 22em;
+  max-height: 25em;
+  padding: 1em;
+  background-color: white;
+  width: 700px;
 }
-
-.registroIndex{
-    font-size: 3rem;
-    background-color: black;
-    color: white;
+.colorFondo .demostracion .imgBoton .botonesLlevaroNo .imagenBotonesCarrito {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.colorFondo .demostracion .imgBoton .botonesLlevaroNo .opcionesComida {
+  color: black;
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-shadow: 1px 1px 20px black;
+  text-decoration: underline;
 }
 
-.botonRegistrarse{
-    margin-top: 2rem;
-    color: white;
-    background-color: black;
+/*Modificaciones de la pagina de la sección sobre nosotros*/
+.colorFondo {
+  background-image: radial-gradient(circle, #ff6e00, #ff7a00, #ff8500, #ff9000, #ff9b00);
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 3em;
+}
+.colorFondo .demostracion {
+  display: inline-block;
+  width: 50% auto;
+  padding: 2em;
+  text-align: center;
+  align-items: center;
+}
+.colorFondo .demostracion .tituloMain {
+  font-size: 4em;
+  color: white;
+  text-decoration: underline;
+  text-shadow: 1px 1px 8px black;
+  padding-top: 1em;
+  animation-duration: 1s;
+}
+.colorFondo .demostracion .sobreNosotrosTexto {
+  color: white;
+  font-size: 1.8em;
+  text-align: center;
+  margin: 2em;
+  text-shadow: 1px 1px 8px black;
+  font-family: "Montserrat", sans-serif;
+  animation-duration: 1s;
+}
+.colorFondo .formularioRegistro {
+  margin-top: 3rem;
+}
+.colorFondo .formularioRegistro .cabeceraRegistro {
+  font-size: 4rem;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 8px black;
+  text-decoration: underline;
+}
+.colorFondo .formularioRegistro .nosotrosRegistro {
+  font-size: 3rem;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 8px black;
+  text-decoration: underline;
+  margin-bottom: 1em;
+}
+.colorFondo .formularioRegistro .registroIndex {
+  font-size: 3rem;
+  background-color: black;
+  color: white;
 }
 
-
-/* A partir de acá Terminan las modificaciones del main y empiezan las del footer
-*/
-.iconosPiePagina{
-    max-width: 70px;
-    margin-top: 3vh;
-    background-color: orange;
-    padding: 1em;
-    border-radius: 75%;
-    margin-left: 4em;
-    margin-right: 4em;
+.pieIndex {
+  background-color: black;
+  text-align: left;
+}
+.pieIndex .logoPrincipal {
+  max-width: 80px;
+  margin-top: 3vh;
+  padding-bottom: 2vh;
+}
+.pieIndex .logoPrincipal:first-child {
+  margin-right: 3.75em;
+  margin-left: 4.5em !important;
+}
+.pieIndex .logoPrincipal:first-child:hover {
+  border: 2px solid black;
+}
+.pieIndex .logoPrincipal:last-child {
+  margin-left: 1em;
+}
+.pieIndex .logoPrincipal:last-child:hover {
+  border: 2px solid black;
+}
+.pieIndex .iconosPiePagina {
+  max-width: 70px;
+  margin-top: 3vh;
+  background-image: radial-gradient(circle, #ff6e00, #ff7a00, #ff8500, #ff9000, #ff9b00);
+  padding: 1em;
+  border-radius: 75%;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+.pieIndex .iconosPiePagina:first-child {
+  margin-left: 5em;
+}
+.pieIndex .iconosPiePagina:hover {
+  border: 2px solid black;
+}
+.pieIndex .Copyright {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
-.iconosPiePagina:first-child{
-    margin-left: 5em;
+.contenedor404 {
+  overflow: hidden;
 }
-
-.pieIndex{
-    background-color: black;
-    text-align: left;
-}
-/*
-.pieDePagina{
-    color: white;
-    display: inline-block;
-    margin: 3rem;
-    margin-right: 0;
-    margin-left: 0;
-}
-
-.logoFooter{
-    margin-right: 8rem;
-    margin-left: 4rem;
-}
-*/
-.textoPie{
-    font-size: 1.2rem;
-    text-align: center;
-    color: white;
-}
-/*
-.mapaPie{
-    margin-left: 4rem;
-}
-*/
-.Copyright{
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-bottom: 0;
-}
-
-
-/* A partir de acá Terminan las modificaciones del footer y comienzan las dedicadas específicamente a modificar la página del carrito
-
-.objetoPrecio{
-    display: inline-block;
-    background-color: white;
-    border: solid black 2px;
-    font-size: 3rem;
-    margin: 0;
-    padding: 0;
-    color: orange;
-    text-shadow: 1px 1px 2px orange;
-}
-
-.textoPregunta{
-    display: inline-block;
-    text-decoration: underline;
-    color: white;
-    font-size: 3rem;
-    margin: 0;
-    padding: 0;
-    margin-top: 6rem;
-    text-shadow: 1px 1px 2px black;
-}
-*/
-.imgBoton{
-    margin-left: 5rem;
-    margin-right: 5rem;
-    max-width: 22em;
-    max-height: 25em;
-    display: inline-block;
-}
-.botonesLlevaroNo{
-    max-width: 22em;
-    max-height: 25em;
-    padding: 1em;
-}
-.imagenBotonesCarrito{
-    max-width: 400px;
-    max-height: auto;
-}
-
-.opcionesComida{
-    color: black;
-    font-size: 2em;
-    background-color: transparent;
-}
-.queOpcionComida{
-    font-size: 3em;
-    background-color: transparent;
-    color: white;
-    text-decoration: underline;
-    margin: 1em;
-}
-
-/* odificacion del Main en las páginas (Carta Restaurante, Carta Cafetería y Carta Tragos)
-*/
-.botonesCarrito{
-    margin: 2em;
-    border: solid black 0.2em;
-    
-}
-
-.tamañoImagen{
-    max-width: 100%;
-    max-height: 35vh;
-    border: solid black 0.2em;
-    
-}
-
-.imgGuiño{
-    max-width: 20em;
-    height: auto;
-}
-
-.tamañoMaximo{
-    max-width: 600px;
-    height: auto;
-}
-
-.textoDemostracionDescripción{
-    font-size: 1.3em;
-    color: orange;
-}
-
-.tituloMain{
-    font-size: 4em;
-    color: white;
-    text-decoration: underline;
-    text-shadow: 1px 1px 15px black;
-    padding-top: 1em;
-}
-
-.sobreNosotrosTexto{
-    color: white;
-    font-size: 1.8em;
-    text-align: center;
-    margin: 2em;
-    text-shadow: 1px 1px 15px black;
-}
+.contenedor404 .img404 {
+  margin-left: 32vw;
+  max-width: 700px;
+  height: auto;
+}/*# sourceMappingURL=proyecto.css.map */
