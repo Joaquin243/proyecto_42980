@@ -15,28 +15,45 @@
         padding-bottom: 1em;
     }
     .formularioRegistro{
-        margin-top: 3em;
+        margin-top: 3rem;
         .cabeceraRegistro{
-            font-size: 4em;
+            font-size: 4rem;
             color: $color_blanco;
             margin-top: 0;
-            margin-bottom: 2em;
-            @include pixeles_sombra(2px,$color_negro);
+            margin-bottom: 2rem;
+            @include pixeles_sombra(8px,$color_negro);
             text-decoration: underline;
-            font-family: 'Montserrat', sans-serif;
         }
-    }
-    .registroIndex{
-        font-size: 3rem;
-        background-color: $color_negro;
-        color: $color_blanco;
-        .botonRegistrarse{
-            margin-top: 2rem;
+        .nosotrosRegistro{
+            font-size: 3rem;
             color: $color_blanco;
-            background-color: $color_negro;
+            margin-top: 0;
+            margin-bottom: 2rem;
+            @include pixeles_sombra(8px,$color_negro);
+            text-decoration: underline;
+            margin-bottom: 1em;
         }
-
+        .padreFlex{
+            margin-right: 2em;
+            margin-left: 2em;
+            .registroIndex{
+                font-size: 3rem;
+                background-color: $color_negro;
+                color: $color_blanco;
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 5px; 
+                box-sizing: border-box;
+                .botonRegistrarse{
+                    margin-top: 2rem;
+                    color: $color_blanco;
+                    background-color: $color_negro;
+                }
+        
+            }
+        }
     }
+    
 }
 
 /*Modificaciones de la pagina de la cafetería y de la carta ya que tienen los miosmos estilados y modificaciones*/
@@ -187,10 +204,24 @@
             text-decoration: underline;
             margin-bottom: 1em;
         }
-        .registroIndex{
-            font-size: 3rem;
-            background-color: $color_negro;
-            color: $color_blanco;
+        .padreFlex{
+            margin-right: 2em;
+            margin-left: 2em;
+            .registroIndex{
+                font-size: 3rem;
+                background-color: $color_negro;
+                color: $color_blanco;
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 5px; 
+                box-sizing: border-box;
+                .botonRegistrarse{
+                    margin-top: 2rem;
+                    color: $color_blanco;
+                    background-color: $color_negro;
+                }
+        
+            }
         }
     }
 }

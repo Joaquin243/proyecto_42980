@@ -87,23 +87,39 @@
   padding-bottom: 1em;
 }
 .colorFondo .formularioRegistro {
-  margin-top: 3em;
+  margin-top: 3rem;
 }
 .colorFondo .formularioRegistro .cabeceraRegistro {
-  font-size: 4em;
+  font-size: 4rem;
   color: white;
   margin-top: 0;
-  margin-bottom: 2em;
-  text-shadow: 1px 1px 2px black;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 8px black;
   text-decoration: underline;
-  font-family: "Montserrat", sans-serif;
 }
-.colorFondo .registroIndex {
+.colorFondo .formularioRegistro .nosotrosRegistro {
+  font-size: 3rem;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 8px black;
+  text-decoration: underline;
+  margin-bottom: 1em;
+}
+.colorFondo .formularioRegistro .padreFlex {
+  margin-right: 2em;
+  margin-left: 2em;
+}
+.colorFondo .formularioRegistro .padreFlex .registroIndex {
   font-size: 3rem;
   background-color: black;
   color: white;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  box-sizing: border-box;
 }
-.colorFondo .registroIndex .botonRegistrarse {
+.colorFondo .formularioRegistro .padreFlex .registroIndex .botonRegistrarse {
   margin-top: 2rem;
   color: white;
   background-color: black;
@@ -265,10 +281,23 @@
   text-decoration: underline;
   margin-bottom: 1em;
 }
-.colorFondo .formularioRegistro .registroIndex {
+.colorFondo .formularioRegistro .padreFlex {
+  margin-right: 2em;
+  margin-left: 2em;
+}
+.colorFondo .formularioRegistro .padreFlex .registroIndex {
   font-size: 3rem;
   background-color: black;
   color: white;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.colorFondo .formularioRegistro .padreFlex .registroIndex .botonRegistrarse {
+  margin-top: 2rem;
+  color: white;
+  background-color: black;
 }
 
 .pieIndex {
